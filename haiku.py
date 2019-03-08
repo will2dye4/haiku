@@ -51,7 +51,7 @@ def random_haiku() -> str:
 
 def random_line(syllables: int) -> str:
     noun = random_noun()
-    while noun.syllables > 5:
+    while noun.syllables > syllables:
         noun = random_noun()
     adjs = []
     available_syllables = syllables - noun.syllables
